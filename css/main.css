@@ -1,0 +1,507 @@
+@charset "utf-8";
+/* CSS Document */
+.wow:first-child {
+      visibility: hidden;
+    }
+body{
+	font-family: Century Gothic;
+	background-color: black
+}
+.clearfix{
+	clear: both
+}
+#main-container{
+	width: 1440px; margin: 0 auto;
+}
+#main-container p{
+	color:#8E8E8E;
+	font-size: 16px
+}
+/*header*/header{
+	width: 100%;
+	height: 70px
+}
+.logo{
+	float: left;
+	width: 30%;
+	height: 52px;
+	margin-top: 18px
+}
+.logo h1{
+	color:#FFBF2D;
+	font-size: 30px;
+	margin: 0 auto;
+	padding: 7px 150px
+}
+.menu{
+	width: 60%;
+	height: 35px;
+	float: right;
+	margin: 35px 0% 0 10%;
+}
+.menu ul{
+	list-style: none
+}
+.menu ul li{
+	float: left;
+	padding: 0 20px;
+	position: relative
+}
+.menu ul li a{
+	text-decoration: none;
+	color: white;
+	font-weight: 500
+} 
+.menu ul li:hover a{
+	color: #FFBF2D;
+    border-bottom: solid 1.5px #FFBF2D;
+	padding: 10px 0
+}
+.menu ul li ul{
+	position: absolute;
+	left: 0px;
+	margin: 0px;
+	padding: 0px;
+	top: 35px;
+	visibility: hidden;
+}
+.menu ul li ul li{
+	width: 50px;
+	height: 50px;
+	padding-top: 10px;
+}
+.menu ul li:hover ul{
+	visibility: visible;
+}
+.menu ul li ul li a{
+	color: white;
+}
+.menu ul li ul li a:hover{
+	color: #FFBF2D;
+}
+/*slider*/
+* {box-sizing: border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  height: 750px
+}
+.mySlides{
+  width: 100%;
+  height: 750px;
+}
+.mySlides img{
+	width: 50%;
+	float: right;
+	height: 750px
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color:#7E7E7E;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+  width: 7px;
+	height: 7px
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+.mySlides .nav-con{
+	width: 40%;
+	height: 600px;
+	float: left;
+	padding: 150px 0% 0px 10%
+}
+.but1{
+	background-color: #FFBF2D;
+	border: none;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 13px 18px;
+	border-radius: 50px;
+	cursor: pointer;
+	margin-top: 30px
+}
+.but2{
+	background-color: black;
+	border: solid 1px white;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 18px;
+	border-radius: 50px;
+	cursor: pointer;
+	color: white;
+	margin-top: 30px
+}
+.but1:hover,.but2:hover{
+	font-size: 18px
+}
+/*about*/#about{
+	width: 100%;
+	height: 750px;
+	margin-top: 100px
+}
+.col-left{
+	width: 50%;
+	height: 750px;
+	float: left;
+}
+.col-right{
+	width: 50%;
+	height: 750px;
+	float: right;
+	padding-top: 120px
+}
+.col-left img{
+	width: 75%;
+	padding-left: 70px
+}
+.bigtitle{
+	font-size: 30px;
+	color: white;
+	padding-left: 20px
+}
+
+table{
+	color: white;
+	border: none;
+	margin-top: 20px
+}
+/*resume*/#resume{
+	width: 100%;
+	height: 1200px;
+	margin-top: 100px
+}
+#resume .re-contents{
+	width: 80%;
+	height: 930px;
+    margin: 40px auto
+}
+.left{
+	float: left;
+	width: 49%;
+	height: 300px;
+	background-color:#222222;
+	padding: 40px 3%;
+	margin: 12px 0
+}
+.right{
+	float: right;
+	width: 49%;
+	height: 300px;
+	background-color:#222222;
+	padding: 40px 3%;
+	margin: 12px 0
+}
+.left:hover,.right:hover{
+	        -webkit-animation: swing 2s ease;
+        animation: swing 2s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
+-webkit-keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+       transform: translateX(-5px);
+    } 
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes swing
+{
+    15%
+    {
+        -webkit-transform: translateX(5px);
+        transform: translateX(5px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-5px);
+        transform: translateX(-5px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+/*services*/#services{
+	width: 100%;
+	height: 600px;
+	margin-top: 100px
+}
+.con-ser{
+	width: 80%;
+	height: 200px;
+	margin: 20px auto
+}
+h4{
+	color: white
+}
+.fa-camera,.fa-dev,.fa-docker,.fa-edit,.fa-ghost{
+	color: #FFBF2D;
+	font-size: 30px
+}
+.col-3{
+	width: 31.5%;
+	float: left;
+	height: 200px;
+	text-align: center;
+	margin-left: 1.5%;
+	background-color: #222222;
+	padding-top: 40px
+}
+.col-3:hover{
+	font-size: 30px;
+	background-color: #FFBF2D;
+	transition: all 0.8s ease
+}
+/*backtotop*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 40px;
+  border: none;
+  outline: none;
+  color: #FFBF2D;
+  cursor: pointer;
+  padding: 10px;
+	opacity: 0.3;
+	background-color: black
+}
+
+#myBtn:hover {
+	opacity: 1
+}
+/*skills*/#skills{
+	width: 100%;
+	height: 500px;
+	margin-top: 50px
+}
+.ski-content{
+	width: 80%;
+	margin: 30px auto;
+	height: 300px;
+	padding-top: 30px
+}
+.ski-conl{
+	width: 49%;
+	float: left;
+	margin-right: 1%
+}
+.ski-conr{
+	width: 49%;
+	float: right;
+	margin-left: 1%
+}
+/*projects*/#projects{
+	width: 100%;
+	height: 1100px
+}
+.top-col{
+	width: 100%;
+	height: 290px;
+	margin-top: 20px
+}
+.top-col .img-left{
+	width: 32%;
+	float: left
+}
+.top-col .img-right{
+	float: right;
+	width: 66%;
+}
+
+.imggg{
+	width: 32%;
+	float: left;
+	height: 290px;
+	margin-right: 2%
+}
+.ski-content .bott-col{
+	margin-top: 20px
+}
+.bott-col .img-right{
+	width: 32%;
+	float: right
+}
+.bott-col .img-left{
+	float: left;
+	width: 66%;
+}
+#projects img{
+	width: 100%;
+	height: 290px;
+	padding-top: 20px;
+	opacity: 0.5
+}
+#projects img:hover{
+	opacity: 1
+}
+/*contact*/#contact{
+	width: 100%;
+	height: 800px;
+	margin-top: 50px
+}
+#contact .col-right{
+	width: 40%;
+	margin-right: 10%
+}
+/*footer*/#footer{
+	width: 100%;
+	height: 250px;
+	margin-top: 150px
+}
+.row{
+	width: 80%;
+	height: 250px;
+	margin: 0 auto
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 25px;
+  height: 250px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#footer h2{
+	color: white
+}
+#footer a{
+	text-decoration: none;
+	color: #969696;
+	
+}
+#footer ul li a:hover{
+	color:#C2C2C2;
+}
+#footer ul li{
+	line-height: 30px
+}
+#footer .ul-1{
+	width: 15%;
+	float: left;
+}
+#footer .ul-2{
+	width: 85%;
+	float: right
+}
+.social{
+	margin-left: 155px;
+	margin-top: 10px
+}
+
+.social i{
+	width: 60px;
+	height: 60px;
+	border-radius: 50px;
+	text-align: center;
+	padding: 15px;
+	font-size: 35px;
+	margin: 0px 5px 0px 5px;
+	color: #FFBF2D
+}
+.fa-home,.fa-camera-retro,.fa-desktop,.fa-globe,.fa-save,
+.fa-handshake,.fa-html5,.fa-id-card,.fa-mobile-alt,.fa-question-circle,.fa-gratipay{
+	color:#494949	
+}
+.column  i{
+	padding-right: 10px
+}
+.fa-behance:hover,.fa-facebook:hover,.fa-twitter:hover{
+	color: black
+}
+.social i:hover{
+	background-color: #FFBF2D;
+}
+
+
+
+
+
+
+
+
